@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Must</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      .title {
+        text-align: center;
+      }
+      .mainDiv {
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .flower {
+        flex: 1;
+        margin: 5;
+      }
+      .table {
+        flex: 1;
+        font-size: 20px;
+        margin: 5;
+        text-align: center;
+      }
+      .url {
+        font-size: 30;
+      }
+      .tableElement {
+        background-color: antiquewhite;
+      }
+      .tableElement:hover {
+        animation-name: colorAniIn;
+        animation-duration: 1s;
+        background-color: aqua;
+      }
+      .tableElement:not(:hover) {
+        animation-name: colorAniOut;
+        animation-duration: 1s;
+        background-color: antiquewhite;
+      }
+
+      @keyframes colorAniIn {
+        from {
+          background-color: antiquewhite;
+        }
+        to {
+          background-color: aqua;
+        }
+      }
+      @keyframes colorAniOut {
+        from {
+          background-color: aqua;
+        }
+        to {
+          background-color: antiquewhite;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <b class="title">
+      <p>Hi</p>
+      <p>HelloWorld</p>
+    </b>
+    <div class="mainDiv">
+      <img class="flower" src="img.png" />
+      <table class="table" id="table" border="1"></table>
+    </div>
+    <a class="url" href="https://www.google.com"> go to Google </a>
+
+    <script>
+      var table = document.getElementById("table");
+      for (var i = 0; i < 9; i++) {
+        var row = table.insertRow(i);
+        for (var j = 0; j < 9; j++) {
+          var a = (i + 1) * (j + 1);
+          var cell = row.insertCell(j);
+          cell.innerHTML = (a < 10 ? "0" : "") + a;
+          cell.className = "tableElement";
+        }
+      }
+    </script>
+  </body>
+</html>

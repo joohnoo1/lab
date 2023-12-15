@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Lobster;
+  src: url("Fonts/Lobster-Regular.ttf");
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("Fonts/UbuntuCondensed-Regular.ttf");
+}
+
+.top {
+  background-color: wheat;
+  width: 80%;
+  height: 75px;
+  margin: 0 auto;
+}
+.center {
+  margin: 0 auto;
+  width: 80%;
+  background-color: wheat;
+}
+.button {
+  background-color: grey;
+  width: 100%;
+  height: 75px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("Images/back.jpg");
+}
+.set {
+  width: 100%;
+  height: 3px50;
+  display: flex;
+  flex-direction: row;
+}
+.setImg {
+  flex: 2;
+}
+.pillar {
+  flex: 0.001;
+  background-color: black;
+}
+.setText {
+  flex: 3;
+  padding-right: 10;
+  padding-left: 10;
+}
+.sImg {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  transition: all 0.5s;
+}
+.sImg:hover{
+    transform: scale(1.5, 1.5) translate(-50%, -50%);
+    transform-origin: 0 0;
+}
+.test {
+  position: relative;
+  height: 200px;
+}
+.over {
+  height: 100px;
+}
+.headText {
+  font-size: 30;
+  text-align: center;
+  padding: 10;
+  font-family: Lobster;
+}
+p {
+  font-family: Ubuntu;
+  font-size: 20;
+}
+.overText {
+  font-family: Lobster;
+  font-size: 20;
+  text-align: center;
+  padding: 30px;
+}
+table {
+  margin: 0 auto;
+  border: 1px solid;
+}
+th {
+  width: 200px;
+  line-height: 50px;
+  font-size: 20px;
+  border: 1px solid;
+}

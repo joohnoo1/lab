@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Positioning Lab</title>
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: #ececec;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif;
+        color: #fff;
+        text-align: center;
+        line-height: 24px;
+      }
+      #wrapper {
+        background-color: #fff;
+        border-width: 1px;
+        border-style: solid;
+        width: 600px;
+        height: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
+        position: relative;
+      }
+      #red {
+        background-color: #900;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      #green {
+        background-color: #090;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      #blue {
+        background-color: #00f;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+      #purple {
+        background-color: #63c;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+      #footer {
+        background-color: #666;
+        clear: both;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .box {
+        width: 150;
+        height: 150;
+      }
+      h1 {
+        color: #000;
+        font-weight: normal;
+        padding: 50px;
+      }
+      .links {
+        position: fixed;
+        left: 50px;
+        top: 50%;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Absolute Positioning 2</h1>
+    <div class="links">
+      <a href="index.html">1</a>
+      <a href="2.html">2</a>
+      <a href="3.html">3</a>
+      <a href="4.html">4</a>
+      <a href="5.html">5</a>
+      <a href="6.html">6</a>
+    </div>
+    <div id="wrapper">
+      <div class="box" id="red">Red</div>
+      <div class="box" id="green">Green</div>
+      <div class="box" id="blue">Blue</div>
+      <div class="box" id="purple">Purple</div>
+      <div class="box" id="footer">Footer</div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
